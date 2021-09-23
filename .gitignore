@@ -1,0 +1,9 @@
+node_modules
+
+#Hardhat files
+cache
+cache-ovm
+artifacts
+artifacts-ovm
+
+.env

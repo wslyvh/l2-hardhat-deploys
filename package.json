@@ -1,0 +1,23 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "deploy:local": "npx hardhat run scripts/greeter.js",
+    "deploy:rinkeby": "npx hardhat run scripts/token.js --network rinkeby",
+    "deploy:arbitrum": "npx hardhat run scripts/token.js --network arbitrum",
+    "deploy:arbitrum_test": "npx hardhat run scripts/token.js --network arbitrum_test",
+    "deploy:optimism": "npx hardhat run scripts/token.js --network optimism",
+    "deploy:optimism_test": "npx hardhat run scripts/token.js --network optimism_test"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.4.7",
+    "hardhat": "^2.6.4"
+  },
+  "dependencies": {
+    "@eth-optimism/hardhat-ovm": "^0.2.3",
+    "dotenv": "^10.0.0"
+  }
+}
